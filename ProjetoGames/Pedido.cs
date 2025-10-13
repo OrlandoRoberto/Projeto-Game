@@ -21,5 +21,15 @@ namespace ProjetoGames
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chktotalpassgamer_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
