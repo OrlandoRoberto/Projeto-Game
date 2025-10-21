@@ -31,5 +31,12 @@ namespace ProjetoGames
         {
 
         }
+
+        private void Pedido_Load(object sender, EventArgs e)
+        {
+            cmbTiposdejogos.Items.Add("ação");
+            cmbTiposdejogos.Items.Add("futebol");
+            cmbTiposdejogos.Items.Add("Rpg");
+        }
     }
 }

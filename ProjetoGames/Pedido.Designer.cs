@@ -37,10 +37,10 @@
             this.ValorOpcionais = new System.Windows.Forms.TextBox();
             this.ValorPagar = new System.Windows.Forms.TextBox();
             this.grpOpcionais = new System.Windows.Forms.GroupBox();
-            this.chk2contas = new System.Windows.Forms.CheckBox();
-            this.chk2controles = new System.Windows.Forms.CheckBox();
-            this.chktotalpassgamer = new System.Windows.Forms.CheckBox();
             this.chkTesteDrive = new System.Windows.Forms.CheckBox();
+            this.chktotalpassgamer = new System.Windows.Forms.CheckBox();
+            this.chk2controles = new System.Windows.Forms.CheckBox();
+            this.chk2contas = new System.Windows.Forms.CheckBox();
             this.dgvPedido = new System.Windows.Forms.DataGridView();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.BTNCalcular = new System.Windows.Forms.Button();
@@ -122,25 +122,15 @@
             this.grpOpcionais.TabStop = false;
             this.grpOpcionais.Text = "ESCOLHA OPCIONAIS";
             // 
-            // chk2contas
+            // chkTesteDrive
             // 
-            this.chk2contas.AutoSize = true;
-            this.chk2contas.Location = new System.Drawing.Point(6, 19);
-            this.chk2contas.Name = "chk2contas";
-            this.chk2contas.Size = new System.Drawing.Size(79, 17);
-            this.chk2contas.TabIndex = 8;
-            this.chk2contas.Text = "2 CONTAS";
-            this.chk2contas.UseVisualStyleBackColor = true;
-            // 
-            // chk2controles
-            // 
-            this.chk2controles.AutoSize = true;
-            this.chk2controles.Location = new System.Drawing.Point(6, 58);
-            this.chk2controles.Name = "chk2controles";
-            this.chk2controles.Size = new System.Drawing.Size(101, 17);
-            this.chk2controles.TabIndex = 9;
-            this.chk2controles.Text = "2 CONTROLES";
-            this.chk2controles.UseVisualStyleBackColor = true;
+            this.chkTesteDrive.AutoSize = true;
+            this.chkTesteDrive.Location = new System.Drawing.Point(6, 125);
+            this.chkTesteDrive.Name = "chkTesteDrive";
+            this.chkTesteDrive.Size = new System.Drawing.Size(97, 17);
+            this.chkTesteDrive.TabIndex = 11;
+            this.chkTesteDrive.Text = "TESTE DRIVE";
+            this.chkTesteDrive.UseVisualStyleBackColor = true;
             // 
             // chktotalpassgamer
             // 
@@ -153,15 +143,25 @@
             this.chktotalpassgamer.UseVisualStyleBackColor = true;
             this.chktotalpassgamer.CheckedChanged += new System.EventHandler(this.chktotalpassgamer_CheckedChanged);
             // 
-            // chkTesteDrive
+            // chk2controles
             // 
-            this.chkTesteDrive.AutoSize = true;
-            this.chkTesteDrive.Location = new System.Drawing.Point(6, 125);
-            this.chkTesteDrive.Name = "chkTesteDrive";
-            this.chkTesteDrive.Size = new System.Drawing.Size(97, 17);
-            this.chkTesteDrive.TabIndex = 11;
-            this.chkTesteDrive.Text = "TESTE DRIVE";
-            this.chkTesteDrive.UseVisualStyleBackColor = true;
+            this.chk2controles.AutoSize = true;
+            this.chk2controles.Location = new System.Drawing.Point(6, 58);
+            this.chk2controles.Name = "chk2controles";
+            this.chk2controles.Size = new System.Drawing.Size(101, 17);
+            this.chk2controles.TabIndex = 9;
+            this.chk2controles.Text = "2 CONTROLES";
+            this.chk2controles.UseVisualStyleBackColor = true;
+            // 
+            // chk2contas
+            // 
+            this.chk2contas.AutoSize = true;
+            this.chk2contas.Location = new System.Drawing.Point(6, 19);
+            this.chk2contas.Name = "chk2contas";
+            this.chk2contas.Size = new System.Drawing.Size(79, 17);
+            this.chk2contas.TabIndex = 8;
+            this.chk2contas.Text = "2 CONTAS";
+            this.chk2contas.UseVisualStyleBackColor = true;
             // 
             // dgvPedido
             // 
@@ -217,6 +217,7 @@
             this.Controls.Add(this.cmbTiposdejogos);
             this.Name = "Pedido";
             this.Text = "Pedido";
+            this.Load += new System.EventHandler(this.Pedido_Load);
             this.grpOpcionais.ResumeLayout(false);
             this.grpOpcionais.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).EndInit();
